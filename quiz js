@@ -1,0 +1,478 @@
+<html>
+    <head>
+        <style>
+            .btn {
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: white;
+}
+.btn:hover {
+  color: #fff;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+.button {
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background-color: white;
+}
+.button:hover {
+  color: #fff;
+  box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+.button1{
+    border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background-color: white;
+  display:none;
+}
+.button1:hover{
+    color: #fff;
+  box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gradient-border {
+  --border-width: 3px;
+  width: 15cm;
+  height: 16cm;
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+#a,#b,#c,#d,#e{
+                color:rgb(207, 38, 0);
+                border:none;
+                padding:10px;
+                border-radius:5px;
+                width:17cm;
+                height:1cm;
+                font-size:25px;
+                cursor: pointer;
+                text-decoration:none;
+            }
+            #a:hover{
+            box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            #b:hover{
+            box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            #c:hover{
+            box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            #d:hover{
+            box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            #e:hover{
+            box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            div p {
+                font-size:25px;
+            }
+            body{
+                margin-top:25px;
+                background-color:#00e6b8;
+            }
+            .gradient-border{
+                border:2px white;
+                border-radius:10px;   
+                background-color:white;               
+                padding-top:0.1px;    
+            }
+            body{
+            background-image:url("background.jpg");
+            }
+            td,tr{
+                padding:15px;
+            }
+            a{
+                text-align:center;
+            }
+           #divfinal table tr td{
+                text-align:center;
+                font-size:20px;
+            }
+            #scoreboard{
+                display:none;
+                height:1cm;
+                width:4cm;
+                text-align:center;
+                color:#e74c3c;
+                font-size:25px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="gradient-border" id="div" align=center>
+        <h1 style="text-align:center; background-color:rgb(116, 193, 116); padding:10px; font-style:bold; font-size:30px;" id="h1" > Choose Category </h1>
+        <div id="divfinal" style="display:none">
+            <table>
+                <tr>
+                    <td colspan="3"> 
+                        <h4 id="question"> 1) Question </h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="opt1"> option1 </td>
+                    <td id="opt2"> option2</td>
+                </tr>
+                <tr>
+                    <td id="opt3">
+                        option3
+                    </td>
+                    <td id="opt4">
+                        option4
+                    </td>
+                </tr>             
+            </table>
+        </div>
+        <table id="table">
+            <tr>
+                <td>
+                    <p> 01) &nbsp; &nbsp; &nbsp;<a id="a" onclick="sports()"> Sports </a> </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> 02) &nbsp;  &nbsp; &nbsp;<a id="b" onclick="geography()"> Geography </a> </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> 03) &nbsp;  &nbsp; &nbsp;<a id="c" onclick="history()">  History </a> </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> 04) &nbsp;  &nbsp; &nbsp;<a id="d" onclick="economics()"> Economics </a> </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <p> 05) &nbsp;  &nbsp; &nbsp;<a id="e" onclick="science()"> Science </a> </p>
+                </td>
+            </tr>
+        </table> 
+         <br> <br>
+        <button class="btn first" id="btn" onclick="reset()"> RESET </button>
+        <input disabled id="scoreboard">
+        <button class="button1" id="button1"> NEXT </button>
+        <button class="button" id="but" onclick="hell()">START </button>
+        <p id="para"> </p>
+    </div>
+    <script>
+      var i=1;
+      var score=0;
+        function hell()
+        {
+            let a=document.getElementById("a");
+            let b=document.getElementById("b");
+            let c=document.getElementById("c");
+            let d=document.getElementById("d");
+            let e=document.getElementById("e");
+            if(a.style.backgroundColor!="pink" && b.style.backgroundColor!="pink" && c.style.backgroundColor!="pink" && d.style.backgroundColor!="pink" && e.style.backgroundColor!="pink")
+            {
+                document.getElementById("para").innerHTML="select any one of category";
+            }
+            else{
+                
+                document.getElementById("a");
+                if(a.style.backgroundColor=="pink")
+                {
+                    document.getElementById("para").style.display="none";
+                document.getElementById("but").style.display="none";   
+                hello();
+                }                
+            }
+        }
+        function reset()
+        {
+            document.getElementById("a").style.backgroundColor="white";
+            document.getElementById("b").style.backgroundColor="white";
+            document.getElementById("c").style.backgroundColor="white";
+            document.getElementById("d").style.backgroundColor="white";
+            document.getElementById("e").style.backgroundColor="white";
+            document.getElementById("para").innerHTML="";  
+        }
+        var d=document.getElementById("a");
+        d.addEventListener("click",questions);
+        function questions()
+        {
+            var que={
+                    1:"WHO HAS MOST RUNS IN THE IPL ?",
+                    2:"HOW MANY CENTURIES VIRAT KOHLI MADE ?",
+                    3:"WHICH IPL TEAM WON MORE IPL TROPIES ?",
+                    4:"WHO SCORED MORE RUNS IN DEATH OVERS ?",
+                    5:"HOW MANY IPL TROPIES CSK WON ?"
+                }
+                var opt1={
+                    1:"VIRAT KOHLI",
+                    2:"74",
+                    3:"PBKS",
+                    4:"MSD",
+                    5:"4"
+                }
+                var opt2={
+                    1:"M S DHONI",
+                    2:"75",
+                    3:"MI",
+                    4:"ROHIT SHARMA",
+                    5:"3"
+                }
+                var opt3={
+                    1:"SHIKHAR DHAWAN",
+                    2:"78",
+                    3:"CSK",
+                    4:"AB DEVELLIERS",
+                    5:"2"
+                }
+                var opt4={
+                    1:"SURESH RAINA",
+                    2:"71",
+                    3:"RR",
+                    4:"KIERON POLLARD",
+                    5:"1"
+                }
+                var correct={
+                    1:"VIRAT KOHLI",
+                    2:"75",
+                    3:"MI",
+                    4:"MSD",
+                    5:"4"
+                }
+                if(i<=5)
+                {
+                    document.getElementById("scoreboard").value="score : "+score;
+                    document.getElementById("question").innerHTML=i+") "+que[i];
+                    const optt1=document.getElementById("opt1");
+                    const optt2=document.getElementById("opt2");
+                    const optt3=document.getElementById("opt3");
+                    const optt4=document.getElementById("opt4");
+                    optt1.innerHTML="A) "+opt1[i];
+                    optt2.innerHTML="B) "+opt2[i];
+                    optt3.innerHTML="C) "+opt3[i];
+                    optt4.innerHTML="D) "+opt4[i];
+                    optt1.style.cssText="background-color:none";
+                    optt2.style.cssText="background-color:none";
+                    optt3.style.cssText="background-color:none";
+                    optt4.style.cssText="background-color:none";
+                    optt1.addEventListener("click",fun1);
+                    function fun1()
+                    {
+                        optt1.style.cssText="background-color:pink";
+                        optt2.style.cssText="background-color:none";
+                        optt3.style.cssText="background-color:none";
+                        optt4.style.cssText="background-color:none";
+                    }
+                    optt2.addEventListener("click",fun2);
+                    function fun2()
+                    {
+                        optt2.style.cssText="background-color:pink";
+                        optt1.style.cssText="background-color:none";
+                        optt3.style.cssText="background-color:none";
+                        optt4.style.cssText="background-color:none";
+                    }
+                    optt3.addEventListener("click",fun3);
+                    function fun3()
+                    {
+                        optt3.style.cssText="background-color:pink";
+                        optt2.style.cssText="background-color:none";
+                        optt1.style.cssText="background-color:none";
+                        optt4.style.cssText="background-color:none";
+                    }
+                    optt4.addEventListener("click",fun4);
+                    function fun4()
+                    {
+                        optt4.style.cssText="background-color:pink";
+                        optt2.style.cssText="background-color:none";
+                        optt1.style.cssText="background-color:none";
+                        optt3.style.cssText="background-color:none";
+                    }
+                    const ans=document.getElementById("button1");
+                    ans.addEventListener("click",answerr);
+                    function answerr()
+                    {
+                        var a=opt1[i];
+                        var e=opt2[i];
+                        var c=opt3[i];
+                        var d=opt4[i];
+                        var b=correct[i]
+                        if(i<=5)
+                        {
+                            if(a==b && optt1.style.backgroundColor=="pink")
+                            {
+                                optt1.style.cssText="background-color:lightgreen";
+                                score+=1;
+                                document.getElementById("scoreboard").value="score : "+score;
+                                i=i+1;
+                               const a=setTimeout( questions,500);
+                            }
+                            else if(e==b && optt2.style.backgroundColor=="pink")
+                            {
+                                optt2.style.cssText="background-color:lightgreen";
+                                i=i+1;
+                                score+=1;
+                                document.getElementById("scoreboard").value="score : "+score;
+                                const a=setTimeout( questions,500);
+                            }
+                            else  if(c==b && optt3.style.backgroundColor=="pink")
+                            {
+                                optt3.style.cssText="background-color:lightgreen";
+                                i=i+1;
+                                score+=1;
+                                document.getElementById("scoreboard").value="score : "+score;
+                                const a=setTimeout( questions,500);
+                            }                        
+                            else  if(d==b && optt4.style.backgroundColor=="pink")
+                            {
+                                optt4.style.cssText="background-color:lightgreen";
+                                i=i+1;
+                                score+=1;
+                                document.getElementById("scoreboard").value="score : "+score;
+                                const a=setTimeout( questions,500);
+                            }                        
+                            else  if(optt1.style.backgroundColor=="pink")
+                                {
+                                    optt1.style.backgroundColor="red";
+                                    i=i+1;
+                                    const a=setTimeout( questions,500);
+                                }                               
+                                else  if(optt2.style.backgroundColor=="pink")
+                                {
+                                   optt2.style.backgroundColor="red";
+                                   i=i+1;
+                                   const a=setTimeout( questions,500);
+                                }
+                                else  if(optt3.style.backgroundColor=="pink")
+                                {
+                                    optt3.style.backgroundColor="red";
+                                    i=i+1;
+                                    const a=setTimeout( questions,500);
+                                }
+                                else if(optt4.style.backgroundColor=="pink"){
+                                    optt4.style.backgroundColor="red";
+                                    i=i+1;
+                                    const a=setTimeout( questions,500);
+                                }
+                            }
+                            else{
+                                const a=setTimeout(scoreboard,500);
+                            }  
+                    }
+                }  
+        }
+        function scoreboard()
+        {
+            alert("Your score is "+score);  
+        }
+        function hello()
+        {
+            document.getElementById("table").style.display="none";
+            document.getElementById("divfinal").style.display="block";
+            document.getElementById("button1").style.display="block";
+            document.getElementById("h1").innerHTML="QUESTIONS"; 
+            document.getElementById("scoreboard").style.display="block"; 
+            document.getElementById("btn").style.display="none";
+            document.getElementById("div").style.cssText="height:14cm; padding-top:15px;";
+        }
+        function sports()
+        {
+            document.getElementById("a").style.cssText="background-color:pink";
+            document.getElementById("b").style.cssText="background-color:none";
+            document.getElementById("c").style.cssText="background-color:none";
+            document.getElementById("d").style.cssText="background-color:none";
+            document.getElementById("e").style.cssText="background-color:none";
+        }
+        function geography()
+        {
+            document.getElementById("b").style.cssText="background-color:pink";
+            document.getElementById("a").style.cssText="background-color:none";
+            document.getElementById("c").style.cssText="background-color:none";
+            document.getElementById("d").style.cssText="background-color:none";
+            document.getElementById("e").style.cssText="background-color:none";
+        }
+        function history()
+        {
+            document.getElementById("c").style.cssText="background-color:pink";
+            document.getElementById("a").style.cssText="background-color:none";
+            document.getElementById("b").style.cssText="background-color:none";
+            document.getElementById("d").style.cssText="background-color:none";
+            document.getElementById("e").style.cssText="background-color:none";
+        }
+        function economics()
+        {
+            document.getElementById("d").style.cssText="background-color:pink";
+            document.getElementById("a").style.cssText="background-color:none";
+            document.getElementById("b").style.cssText="background-color:none";
+            document.getElementById("c").style.cssText="background-color:none";
+            document.getElementById("e").style.cssText="background-color:none";
+        }
+        function science()
+        {
+            document.getElementById("e").style.cssText="background-color:pink";
+            document.getElementById("a").style.cssText="background-color:none";
+            document.getElementById("b").style.cssText="background-color:none";
+            document.getElementById("c").style.cssText="background-color:none";
+            document.getElementById("d").style.cssText="background-color:none";
+        } 
+    </script>
+    </body>
+</html>
