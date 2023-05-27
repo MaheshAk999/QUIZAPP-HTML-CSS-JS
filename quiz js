@@ -109,6 +109,25 @@ body {
                 cursor: pointer;
                 text-decoration:none;
             }
+            #opt1,#opt2,#opt3,#opt4{
+                cursor:pointer;
+            }
+            #opt1:hover{
+                box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            }
+            #opt2:hover{
+                box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            }
+            #opt3:hover{
+                box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            }
+            #opt4:hover{
+                box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            }
             #a:hover{
             box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
