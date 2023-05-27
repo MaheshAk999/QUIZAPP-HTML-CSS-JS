@@ -382,58 +382,130 @@ body {
                                 score+=1;
                                 document.getElementById("scoreboard").value="score : "+score;
                                 i=i+1;
-                               const a=setTimeout( questions,500);
+                               const fun=setTimeout( questions,1000);
                             }
-                            else if(e==b && optt2.style.backgroundColor=="pink")
+                            else 
+                            if(e==b && optt2.style.backgroundColor=="pink")
                             {
                                 optt2.style.cssText="background-color:lightgreen";
                                 i=i+1;
                                 score+=1;
                                 document.getElementById("scoreboard").value="score : "+score;
-                                const a=setTimeout( questions,500);
+                                const fun=setTimeout( questions,1000);
                             }
-                            else  if(c==b && optt3.style.backgroundColor=="pink")
+                            else 
+                            if(c==b && optt3.style.backgroundColor=="pink")
                             {
                                 optt3.style.cssText="background-color:lightgreen";
                                 i=i+1;
                                 score+=1;
                                 document.getElementById("scoreboard").value="score : "+score;
-                                const a=setTimeout( questions,500);
+                                const fun=setTimeout( questions,1000);
                             }                        
-                            else  if(d==b && optt4.style.backgroundColor=="pink")
+                            else 
+                            if(d==b && optt4.style.backgroundColor=="pink")
                             {
                                 optt4.style.cssText="background-color:lightgreen";
                                 i=i+1;
                                 score+=1;
                                 document.getElementById("scoreboard").value="score : "+score;
-                                const a=setTimeout( questions,500);
+                                const fun=setTimeout( questions,1000);
                             }                        
-                            else  if(optt1.style.backgroundColor=="pink")
+                            else  
+                            if(optt1.style.backgroundColor=="pink")
                                 {
                                     optt1.style.backgroundColor="red";
                                     i=i+1;
-                                    const a=setTimeout( questions,500);
+                                    if(a==b)
+                                    {
+                                        optt1.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(e==b)
+                                    {
+                                        optt2.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(c==b)
+                                    {
+                                        optt3.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(d==b)
+                                    {
+                                        optt4.style.cssText="background-color:lightgreen";
+                                    }
+                                   
+                                        const fun=setTimeout( questions,1000);
+                                    
+
+                                    
                                 }                               
-                                else  if(optt2.style.backgroundColor=="pink")
+                                else if(optt2.style.backgroundColor=="pink")
                                 {
                                    optt2.style.backgroundColor="red";
                                    i=i+1;
-                                   const a=setTimeout( questions,500);
+                                   if(a==b)
+                                    {
+                                        optt1.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(e==b)
+                                    {
+                                        optt2.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(c==b)
+                                    {
+                                        optt3.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(d==b)
+                                    {
+                                        optt4.style.cssText="background-color:lightgreen";
+                                    }
+                                   const fun=setTimeout( questions,1000);
                                 }
                                 else  if(optt3.style.backgroundColor=="pink")
                                 {
                                     optt3.style.backgroundColor="red";
                                     i=i+1;
-                                    const a=setTimeout( questions,500);
+                                    if(a==b)
+                                    {
+                                        optt1.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(e==b)
+                                    {
+                                        optt2.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(c==b)
+                                    {
+                                        optt3.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(d==b)
+                                    {
+                                        optt4.style.cssText="background-color:lightgreen";
+                                    }
+                                    const fun=setTimeout( questions,1000);
                                 }
                                 else if(optt4.style.backgroundColor=="pink"){
                                     optt4.style.backgroundColor="red";
                                     i=i+1;
-                                    const a=setTimeout( questions,500);
+                                    if(a==b)
+                                    {
+                                        optt1.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(e==b)
+                                    {
+                                        optt2.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(c==b)
+                                    {
+                                        optt3.style.cssText="background-color:lightgreen";
+                                    }
+                                    else if(d==b)
+                                    {
+                                        optt4.style.cssText="background-color:lightgreen";
+                                    }
+                                    const fun=setTimeout( questions,1000);
                                 }
                             }
                             else{
-                                const a=setTimeout(scoreboard,500);
+                                const a=setTimeout(scoreboard,1000);
                             }  
                     }
                 }  
