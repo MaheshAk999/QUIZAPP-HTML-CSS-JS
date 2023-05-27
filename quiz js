@@ -258,42 +258,42 @@ body {
         {
             var que={
                     1:"WHO HAS MOST RUNS IN THE IPL ?",
-                    2:"HOW MANY CENTURIES VIRAT KOHLI MADE ?",
+                    2:"WHICH PLAYER IS KNOWN AS MR IPL?",
                     3:"WHICH IPL TEAM WON MORE IPL TROPIES ?",
-                    4:"WHO SCORED MORE RUNS IN DEATH OVERS ?",
+                    4:"WHO SCORED MORE RUNS IN DEATH OVERS IN IPL?",
                     5:"HOW MANY IPL TROPIES CSK WON ?"
                 }
                 var opt1={
                     1:"VIRAT KOHLI",
-                    2:"74",
+                    2:"MSD",
                     3:"PBKS",
                     4:"MSD",
                     5:"4"
                 }
                 var opt2={
                     1:"M S DHONI",
-                    2:"75",
+                    2:"AB DEVELLIERS",
                     3:"MI",
                     4:"ROHIT SHARMA",
                     5:"3"
                 }
                 var opt3={
                     1:"SHIKHAR DHAWAN",
-                    2:"78",
+                    2:"SURESH RAINA",
                     3:"CSK",
                     4:"AB DEVELLIERS",
                     5:"2"
                 }
                 var opt4={
                     1:"SURESH RAINA",
-                    2:"71",
+                    2:"RAVINDRA JADEJA",
                     3:"RR",
                     4:"KIERON POLLARD",
                     5:"1"
                 }
                 var correct={
                     1:"VIRAT KOHLI",
-                    2:"75",
+                    2:"SURESH RAINA",
                     3:"MI",
                     4:"MSD",
                     5:"4"
